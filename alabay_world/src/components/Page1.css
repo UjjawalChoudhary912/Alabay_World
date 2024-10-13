@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Permanent+Marker&display=swap');
+
+.pg1 {
+    width: 88%;                          /* Full width */
+    height: 100vh;                      /* Full height */
+    background-color: rgb(240, 225, 48); /* Background color */
+    margin: 0 auto;                     /* Center the div horizontally */
+    display: flex;                      /* Use flexbox */
+    justify-content: flex-start;        /* Align items to the top */
+    align-items: center;                /* Center items vertically */
+    padding: 20px;                      /* Optional padding */
+    position: relative;                 /* Enable stacking context */
+    z-index: 1;                         /* Ensure it appears above the background */
+    margin-top: 100vh;                  /* Start below the image */
+}
+
+.jumpingDog {
+    width: 500px;                      
+    height: 500px;                    
+    margin-right: 20px; 
+             
+}
+
+
+.textContainer {
+    display: flex;  
+    margin-left: 200px;                   /* Use flexbox for the text container */
+    flex-direction: column;            /* Stack text vertically */
+    justify-content: flex-start;       /* Align text to the top */
+    align-items: flex-start;           /* Align text to the left */
+}
+
+h2 {
+    color: #e3832f;                    /* Orange-red color */
+    font-weight: bolder;                 /* Increase font weight */
+    font-size: 80px;                   /* Increase font size for h2 */
+    margin: 0;             
+}
+
+h2 span {
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+    font-family: "Permanent Marker", cursive;
+}
+
+p{
+    font-size:25px;
+    color: rgb(30, 30, 37);
+    font-weight: 700;
+}
