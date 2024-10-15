@@ -1,0 +1,21 @@
+/* Page3.css */
+.pg3 {
+    width: 86%;
+    height: 120vh;
+    background-color: rgb(240, 225, 48); /* You can change this color if needed */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.manydogs {
+    width: 900px;  /* Set the desired width */
+    height: auto;  /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers the defined width while maintaining its aspect ratio */
+    margin-top: 20px; /* Optional: adds some spacing above the image */
+}

@@ -1,0 +1,49 @@
+/* Page7.css */
+.pg7 {
+    width: 86%;
+    height: 100vh;
+    background-color: rgb(240, 225, 48);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.scroll-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-arrow {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.scroll-arrow:hover {
+    color: #555;
+}
+
+img {
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 20px; /* Add margin between the image and buttons */
+    display: block;
+    transition: opacity 0.5s ease;
+}

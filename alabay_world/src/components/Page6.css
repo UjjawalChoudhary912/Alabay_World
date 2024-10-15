@@ -1,0 +1,74 @@
+.pg6 {
+    width: 86%;
+    height: 100vh;
+    background-color: rgb(243, 244, 247);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    color: rgb(240, 225, 48);
+    font-weight: bold;
+    font-size: 100px;
+    font-family: "Permanent Marker", cursive;
+    margin-bottom: 50px;
+}
+
+/* Slider styling */
+.slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.merch-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px; 
+    height: 450px;
+    border-radius: 10px;
+}
+
+.bck-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+.front-image {
+    position: absolute;
+    z-index: 2; 
+    width: 250px; 
+    height: auto;
+}
+
+/* Slider controls */
+.prev, .next {
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.7); /* Optional: color for arrows */
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}

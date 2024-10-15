@@ -1,0 +1,73 @@
+.pg5 {
+    width: 86%;
+    height: 100vh;
+    background-color: rgb(240, 225, 48);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: left; 
+    margin-bottom: 20px; 
+}
+
+
+/* Flex container for tokens and image */
+.tokensContainer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%; 
+    padding-top: 20px;
+}
+
+/* Token cards container (stacked vertically) */
+.tokens {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    margin-top: 180px;
+}
+
+/* Individual token design */
+.tkn {
+    background-color: #333; 
+    color: white;
+    padding: 15px;
+    width: 200px; 
+    height: 60px; 
+    display: flex;
+    flex-direction: column; 
+    border-radius: 10px;
+    box-shadow: 6px 9px 10px rgba(0, 0, 0, 0.3); 
+    margin-left: 200px;
+   
+}
+
+.tkn p {
+    color: white; 
+    font-size: 16px;
+    margin: 0;
+}
+
+.tkn h3 {
+    color: rgb(240, 225, 48); 
+    font-size: 20px;
+    margin-top: 5px; 
+}
+
+/* Image adjustments */
+.pg5 img {
+    width: 550px; 
+    height: auto;
+    object-fit: contain;
+    margin-left: 20px; 
+    margin-right: 200px;
+}

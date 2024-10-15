@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Permanent+Marker&display=swap');
 
 .pg1 {
-    width: 88%;                          /* Full width */
+    width: 86%;                          /* Full width */
     height: 100vh;                      /* Full height */
     background-color: rgb(240, 225, 48); /* Background color */
     margin: 0 auto;                     /* Center the div horizontally */

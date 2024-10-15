@@ -1,0 +1,65 @@
+/* Page4.css */
+.pg4 {
+    width: 86%;
+    height: 150vh;
+    background-color: rgb(243, 244, 247);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.textContain {
+    flex: 1;
+    text-align: left;
+    padding-right: 0;
+}
+.textContain p{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.colorchange{
+    color: rgb(240, 225, 48);
+}
+
+.mapDog {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    justify-content: center; /* Center the cards */
+    margin-top: 20px;
+    width: 90%;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 0 10px; /* Add space between cards */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
