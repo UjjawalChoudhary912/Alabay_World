@@ -45,9 +45,10 @@
 
 .scrollable {
     display: flex;
-    overflow: hidden;
+    overflow-x: auto; /* Enable horizontal scrolling */
     width: 800px; /* Set the width of the container to fit 3 items */
-    gap: 60px;
+    gap: 40px;
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 .media-item {
@@ -70,16 +71,15 @@
 }
 
 .scroll-arrow {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: #333;
-    margin: 0 10px;
-}
-
-.scroll-arrow:hover {
-    color: #555;
+    cursor: pointer; /* Change from background-color to cursor pointer */
+    width: 40px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position absolutely for correct placement */
+    top: 50%;
+    right: 10px; /* Position the arrow on the right */
+    transform: translateY(-50%); /* Center the arrow vertically */
+    z-index: 10; /* Ensure it is above other elements */
+   margin-right: 120px;
 }
 
 .active {

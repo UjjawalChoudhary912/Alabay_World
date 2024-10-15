@@ -7,7 +7,7 @@ import Page4 from "./components/Page4";
 import Page5 from "./components/Page5";
 import Page6 from "./components/Page6";
 import Page7 from "./components/Page7";
-
+import Page8 from "./components/Page8";
 
 function App() {
   return (
@@ -19,7 +19,8 @@ function App() {
      <Page4/>
      <Page5/>
      <Page6/>
-    <Page7/>
+     <Page7/>
+     <Page8/>
  </div>
   );
 }

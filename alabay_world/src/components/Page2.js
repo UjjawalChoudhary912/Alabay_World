@@ -1,6 +1,4 @@
 import React, { useRef, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import './Page2.css';
 import DogImg4 from './Images/DogImg4.png';
 import DogImg5 from './Images/DogImg5.png';
@@ -9,19 +7,25 @@ import DogImg7 from './Images/DogImg7.png';
 import video1 from './videos/video1.mov';
 import video2 from './videos/video2.mp4';
 import video3 from './videos/video3.mp4';
+import rightArrow from './Images/right-arrow.png'; // Custom right arrow image
 
 const Page2 = () => {
     const scrollRef = useRef(null);
-    const [filter, setFilter] = useState('All'); // State to manage the filter
+    const [filter, setFilter] = useState('All');
 
-    const scroll = (direction) => {
+    const scroll = () => {
         if (scrollRef.current) {
-            const scrollAmount = direction === 'left' ? -scrollRef.current.clientWidth : scrollRef.current.clientWidth;
+            const scrollAmount = scrollRef.current.clientWidth; // Scroll by the width of the container
             scrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+
+            // Check if the scroll position is at the end
+            if (scrollRef.current.scrollLeft + scrollAmount >= scrollRef.current.scrollWidth) {
+                // Reset scroll position to the start
+                scrollRef.current.scrollLeft = 0;
+            }
         }
     };
 
-    // Media items array
     const mediaItems = [
         { type: 'Photo', src: DogImg4, isVideo: false },
         { type: 'Video', src: video1, isVideo: true },
@@ -32,7 +36,6 @@ const Page2 = () => {
         { type: 'Photo', src: DogImg7, isVideo: false },
     ];
 
-    // Filtered media based on the selected type
     const filteredMedia = mediaItems.filter(item => filter === 'All' || item.type === filter);
 
     return (
@@ -59,9 +62,6 @@ const Page2 = () => {
             </ul>
 
             <div className="media-container">
-                <button className="scroll-arrow left-arrow" onClick={() => scroll('left')}>
-                    <FontAwesomeIcon icon={faChevronLeft} />
-                </button>
                 <div className="scrollable" ref={scrollRef}>
                     {filteredMedia.map((item, index) => (
                         <div className="media-item" key={index}>
@@ -73,9 +73,12 @@ const Page2 = () => {
                         </div>
                     ))}
                 </div>
-                <button className="scroll-arrow right-arrow" onClick={() => scroll('right')}>
-                    <FontAwesomeIcon icon={faChevronRight} />
-                </button>
+                <img 
+                    src={rightArrow} 
+                    alt='right arrow' 
+                    className="scroll-arrow right-arrow" 
+                    onClick={scroll} 
+                />
             </div>
 
             <h1>PROJECT VISION</h1>
