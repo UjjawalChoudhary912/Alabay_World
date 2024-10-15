@@ -12,7 +12,20 @@ body, html {
     width: 98%; 
     margin-left: 1%;            
     height: 100vh;             
-    object-fit: cover;         
+    object-fit:calc(100%-16px);         
     z-index: 0;               
 }
+
+.page-container {
+    height: 90vh; /* Set height to 80% of the viewport height */
+    overflow-y: auto; /* Allows vertical scrolling */
+    overflow-x: hidden; /* Hides horizontal overflow */
+    position: fixed; /* Fixes the position of the container */
+    bottom: 0; /* Anchors it to the bottom of the viewport */
+    left: 0; /* Aligns it to the left */
+    right: 0; /* Aligns it to the right */
+    z-index: 1; /* Ensure it stays above the background */
+}
+
+
 
