@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+.game1-container {
+    background-image: url('./Images/pg7Images/Game1dull.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.main-title {
+    font-size: 3.5em;
+    margin: 0;
+    color: white;
+}
+
+.subtitl {
+    font-size: 1.5em;
+    margin: 0;
+    color: #AC8EF2;
+}
+
+.description {
+    color: white;
+}
+
+.content {
+    margin-top: 80px;
+    padding-right: 10px;
+    overflow-y: auto;
+}
+
+.play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #AC8EF2;
+    color: black;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+    width: 120px;
+}
+
+.play-button:hover {
+    background-color: #c530e0;
+}
+
+.SPAN {
+    color: #AC8EF2;
+}
+
+.play-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.image-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.preview-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 30px;
+}
+
+.featur {
+    color: #AC8EF2;
+}
+
+.features-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features-list li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.features-list ul {
+    margin-top: 10px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 20px; /* Space between the buttons */
+    margin-top: 30px; /* Space from the content above */
+}
+
+.play-action-button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.play-action-button:hover {
+    background-color: #e0e0e0;
+}
+
+.play-action-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.exit-action-button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100px;
+}
+
+.exit-action-button:hover {
+    background-color: white;
+    color: black;
+}

@@ -35,8 +35,9 @@
 .mapDog {
     width: 500px;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
 }
+
 
 /* Cards */
 .card-container {
@@ -62,4 +63,12 @@
 .card img {
     width: 100%;
     height: auto;
+}
+
+.card {
+    transition: box-shadow 0.3s ease; /* Smooth transition for box shadow */
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Box shadow on hover */
 }

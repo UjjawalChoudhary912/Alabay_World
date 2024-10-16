@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+
+.game2-full-screen {
+    background-image: url('./Images/pg7Images/Game2dull.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    color: white;
+    overflow-y: auto;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #5fce99;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.playy-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #5fce99;;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.playy-button:hover {
+    background-color: #20C073; 
+    }
+    span{
+       color: #20C073;  
+    }
+
+.play-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.preview-image {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.feature {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    color: #5fce99;
+}
+
+.features-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0;
+    text-align: left;
+}
+
+.features-list li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.features-list ul {
+    margin-top: 10px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
